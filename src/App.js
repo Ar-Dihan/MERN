@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ArNahid></ArNahid>
     </div>
   );
+}
+
+function ArNahid(){
+  return (
+    <div style={{color: 'red', forntWeight: 'bold', fontSize: '44px', backgroundColor: 'lightblue', width: '50%', borderRadius: '5px'}}>
+      <p>Atikur Rahman</p>
+      <p>LUT Univarsity</p>
+      <p>MERN DEVELOPER</p>
+    </div>
+  )
 }
 
 export default App;

@@ -1,29 +1,46 @@
 import './App.css';
-
+import Countries from './components/Countries/Countries';
+import Header from './components/Header/Header';
 function App() {
   return (
     <div className="App">
-    <ArNahid name="atik" varsity="oulu"></ArNahid>
-    <Cinema name="kutub mainar" category="ancient masjid"></Cinema>
-    </div>
+      <Countries/>
+      <Header/>
+      </div>
   );
 }
 
-function ArNahid(props){
-  return (
-    <div style={{color: 'red', forntWeight: 'bold', fontSize: '44px', backgroundColor: 'lightblue', borderRadius: '5px'}}>
-      <p>Atikur Rahman</p>
-      <p>LUT Univarsity and {props.varsity}</p>
-      <h1>{props.name}</h1>
-      <p>MERN DEVELOPER</p>
-    </div>
-  );
-}
+// function Countries(){
+//   const [countries, setCountries] = useState([]);
 
-function Cinema(props) {
-  return (
-    <h1>{props.name} {props.category}</h1> 
-  );
-}
+//   useEffect(() =>{
+//     fetch('https://restcountries.com/v2/all')
+//     .then(res=> res.json())
+//     .then(data=> {
+//       console.log("Nahid");
+//       setCountries(data)
+//     });
+//   }, []);
+  
+//   return(
+//     <div>
+//       <h2>Traveling around the world</h2>
+//       <h4>Countries Available: {countries.length}</h4>
+//       {
+//         countries.map(country => <Country name={country.name} population= {country.population} key={country.alpha2Code}></Country>)
+//       }
+//     </div>
+//   )
+// }
+
+// function Country(props){
+//   return(
+//     <div>
+//       <h2>Name: {props.name} --- population: {props.population}</h2>
+//     </div>
+//   )
+// }
+
+
 
 export default App;

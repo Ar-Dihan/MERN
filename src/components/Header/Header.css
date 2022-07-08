@@ -1,0 +1,7 @@
+.menu a{
+    color: black;
+    text-decoration: none;
+    background-color: red;
+    padding: 8px;
+    margin-left: 2px;
+}

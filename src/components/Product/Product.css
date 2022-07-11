@@ -1,0 +1,22 @@
+.product{
+    display: flex;
+}
+.product img{
+    margin:0 20px;
+    
+}
+.productDetail{
+    margin-left: 20px;
+    text-align: left;
+}
+.productName{
+    color: blue;
+}
+
+.purchaseButton{
+    font-size: 20px;
+    padding: 5px 20px;
+    background-color: yellow;
+    border: 1px solid rgb(2, 95, 72);
+    border-radius: 4px;
+}
